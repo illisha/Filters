@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    tools:context=".ControlActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="396dp"
+        android:layout_height="416dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/doraemon" />
+
+    <LinearLayout
+        android:id="@+id/Layout1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/centerImage"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/wrong" />
+
+        <!--<SeekBar-->
+            <!--android:id="@+id/seekBar"-->
+            <!--android:layout_width="257dp"-->
+            <!--android:layout_height="49dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:progressDrawable="@drawable/seekbar_layer"-->
+
+            <!--/>-->
+
+        <SeekBar
+            android:id="@+id/simpleSeekBar"
+            android:layout_width="257dp"
+            android:layout_height="49dp"
+            android:max="200"
+            android:progress="100"
+            android:background="#000000"
+        android:progressDrawable="@drawable/custom_progress"/>
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Layout1"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_below="@+id/Layout1"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:layout_below="@+id/Layout1">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:padding="4dp"
+            app:srcCompat="@drawable/image1" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:padding="4dp"
+            app:srcCompat="@drawable/image2" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:padding="4dp"
+            app:srcCompat="@drawable/image3" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:padding="4dp"
+            app:srcCompat="@drawable/image4" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Filters</string>
+    <string name="title_activity_control">ControlActivity</string>
+
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_required_message">You need to give storage access to easily save your filtered image</string>
+    <string name="permission_negative_text">No</string>
+    <string name="permission_positive_text">Yes</string>
+
+    <string name="permission_granted">Permission Granted!</string>
+    <string name="permission_granted_message">Thankyou for providing storage permission</string>
+    <string name="permissison_granted_positive">OK</string>
+</resources>
